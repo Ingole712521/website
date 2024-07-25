@@ -1,0 +1,52 @@
+
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import backgroundImage from '../assets/image.png'; // Adjust the path to your background image
+
+const HomeContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 200vw; /* Ensures the container takes the full width of the viewport */
+  background-image: url(${backgroundImage});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+`;
+
+const Title = styled(motion.h1)`
+  font-size: 4rem;
+  margin-bottom: 1rem;
+`;
+
+const Subtitle = styled(motion.p)`
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+`;
+
+const HomeSection = () => {
+  return (
+    <HomeContainer id="home">
+      <Title
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: 'easeOut' }}
+      >
+        Alief View
+      </Title>
+      <Subtitle
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
+      >
+        Welcome to our website
+      </Subtitle>
+    </HomeContainer>
+  );
+};
+
+export default HomeSection;

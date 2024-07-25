@@ -1,0 +1,24 @@
+/* src/components/GallerySection.css */
+
+.gallery-container {
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    color: #471717;
+    margin-bottom: 3rem;
+  }
+  
+  .slider-container {
+    width: 35%; /* 35% of the page */
+    margin: 0 auto; /* Center the slider */
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: auto;
+  }
+  

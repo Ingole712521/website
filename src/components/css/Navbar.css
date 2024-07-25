@@ -1,0 +1,12 @@
+/* Styles for the active link */
+a.active {
+  color: #d81b60; /* Pink color for active link */
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.2); /* Slight background highlight */
+}
+
+/* Styles for navbar visibility */
+.nav-visible {
+  display: flex !important;
+}

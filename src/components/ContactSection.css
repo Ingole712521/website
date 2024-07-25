@@ -1,0 +1,93 @@
+/* src/css/ContactUs.css */
+
+:root {
+    --color-primary: #f857a8;
+    --color-secondary: #ff5858;
+    --color-neutral-lt: #fff;
+    --color-neutral-med: #ddd;
+    --color-neutral-dk: #444;
+    --background-blue: #e0f7fa; /* Light blue background color */
+  }
+  
+  .contact-section {
+    background-image: url('https://i.ibb.co/9p3Cnk9/slider-2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--color-neutral-dk);
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .company-info,
+  .contact-form {
+    flex: 1 1 45%;
+    margin: 10px;
+  }
+  
+  .company-info h2,
+  .contact-form h2 {
+    color: var(--color-primary);
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .company-info p,
+  .contact-form label {
+    color: var(--color-neutral-dk);
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--color-neutral-med);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+  }
+  
+  .contact-form button:hover {
+    background-color: var(--color-secondary);
+  }
+  
+  @media (max-width: 800px) {
+    .company-info,
+    .contact-form {
+      flex: 1 1 100%;
+      margin: 10px 0;
+    }
+  }
+  
